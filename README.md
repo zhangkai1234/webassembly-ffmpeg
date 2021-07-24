@@ -17,6 +17,12 @@ moudle：
 web-client:
 webassembly + ffmpeg h264 decode + webgl
 
+编译emcc ffmpeg  lib库:
+./doc/build_ffmpeg-emcc.sh
+
+编译ffmpeg.js和ffmpeg.wasm
+./doc/build_wasm.sh
+
 播放流程:
 
 1.启动server
