@@ -1,0 +1,14 @@
+prefix=../ffmpeg-emcc/
+exec_prefix=${prefix}
+libdir=../ffmpeg-emcc//lib
+includedir=../ffmpeg-emcc//include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.3.101
+Requires: libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

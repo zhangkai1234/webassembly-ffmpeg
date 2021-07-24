@@ -1,0 +1,14 @@
+prefix=../ffmpeg-emcc/
+exec_prefix=${prefix}
+libdir=../ffmpeg-emcc//lib
+includedir=../ffmpeg-emcc//include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 59.4.100
+Requires: libavcodec >= 59.3.101, libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm
+Libs.private: 
+Cflags: -I${includedir}

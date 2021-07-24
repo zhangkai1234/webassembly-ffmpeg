@@ -1,0 +1,14 @@
+prefix=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg
+exec_prefix=${prefix}
+libdir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/lib
+includedir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 6.0.100
+Requires: libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

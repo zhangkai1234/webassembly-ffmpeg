@@ -1,0 +1,14 @@
+prefix=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg
+exec_prefix=${prefix}
+libdir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/lib
+includedir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.3.101
+Requires: libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

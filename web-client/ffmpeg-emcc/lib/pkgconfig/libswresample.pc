@@ -1,0 +1,14 @@
+prefix=../ffmpeg-emcc/
+exec_prefix=${prefix}
+libdir=../ffmpeg-emcc//lib
+includedir=../ffmpeg-emcc//include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.0.100
+Requires: libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

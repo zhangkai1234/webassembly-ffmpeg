@@ -1,0 +1,14 @@
+prefix=../ffmpeg-emcc/
+exec_prefix=${prefix}
+libdir=../ffmpeg-emcc//lib
+includedir=../ffmpeg-emcc//include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 59.0.100
+Requires: libavfilter >= 8.0.103, libswscale >= 6.0.100, libpostproc >= 56.0.100, libavformat >= 59.4.100, libavcodec >= 59.3.101, libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lm -s USE_SDL=2
+Libs.private: 
+Cflags: -I${includedir}

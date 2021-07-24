@@ -1,0 +1,14 @@
+prefix=../ffmpeg-emcc/
+exec_prefix=${prefix}
+libdir=../ffmpeg-emcc//lib
+includedir=../ffmpeg-emcc//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.0.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

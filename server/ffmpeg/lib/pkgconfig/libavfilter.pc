@@ -1,0 +1,14 @@
+prefix=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg
+exec_prefix=${prefix}
+libdir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/lib
+includedir=/mnt/hgfs/server1.8/web-ffmpeg/module/ffmpeg/../../server/ffmpeg/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.0.103
+Requires: libswscale >= 6.0.100, libavformat >= 59.4.100, libavcodec >= 59.3.101, libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
