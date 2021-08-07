@@ -1,3 +1,6 @@
+视频教程:
+https://edu.csdn.net/course/detail/35615
+
 webassembly ffmpeg测试项目:
 
 网页播放效果图:
